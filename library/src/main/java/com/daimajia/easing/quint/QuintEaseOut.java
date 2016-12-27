@@ -35,7 +35,6 @@ public class QuintEaseOut extends BaseEasingMethod{
     public Float calculate(float t, float b, float c, float d) {
         t /= d;
     	t--;
-	    return c*(t*t*t*t*t + 1) + b;
-        //return c*((t=t/d-1)*t*t*t*t + 1) + b;
+	return c*(t*t*t*t*t + 1) + b;
     }
 }
